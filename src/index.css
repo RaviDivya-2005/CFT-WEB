@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+}
+
+:root {
+  --primary: #1A4F8A;       /* Deep Royal Blue */
+  --primary-light: #2563EB; /* Bright Blue */
+  --primary-dark: #0F2D5A;  /* Dark Navy */
+  --accent: #F59E0B;        /* Golden Amber */
+  --accent-light: #FCD34D;  /* Light Gold */
+  --white: #FFFFFF;
+  --off-white: #F8FAFC;
+  --light-gray: #E2E8F0;
+  --text-dark: #0F172A;
+  --text-mid: #334155;
+  --text-light: #64748B;
+  --gradient-hero: linear-gradient(135deg, #0F2D5A 0%, #1A4F8A 50%, #2563EB 100%);
+  --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #FCD34D 100%);
+  --shadow-card: 0 4px 24px rgba(26,79,138,0.12);
+  --shadow-hover: 0 12px 40px rgba(26,79,138,0.22);
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Global resets & scrollbar overrides */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--off-white);
+    color: var(--text-mid);
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-dark);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: var(--radius-full);
+}
+
+/* Selection highlight */
+::selection {
+  background-color: var(--accent);
+  color: var(--primary-dark);
+}
+
+/* Glass Card styling from design theme */
+.glass-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--light-gray);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.hero-bg {
+  background-image: url('/family_tempo_traveler.png');
+}
+
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatParticle linear infinite;
+}
+
+.particle-1 { animation-duration: 6s; animation-delay: 0s; }
+.particle-2 { animation-duration: 8s; animation-delay: 1s; }
+.particle-3 { animation-duration: 10s; animation-delay: 2s; }
+.particle-4 { animation-duration: 7s; animation-delay: 0.5s; }
+.particle-5 { animation-duration: 5s; animation-delay: 3s; }
+.particle-6 { animation-duration: 9s; animation-delay: 1.5s; }
+.particle-7 { animation-duration: 12s; animation-delay: 0.2s; }
+.particle-8 { animation-duration: 8s; animation-delay: 2.5s; }
+
+.testimonial-slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.nav-footer-action {
+  background: var(--gradient-accent);
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 32px 32px;
+}
+
+/* Utility classes */
+.section-padding {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn-primary {
+  background: var(--gradient-accent);
+  color: var(--primary-dark);
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: var(--radius-full);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  padding: 12px 30px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background: var(--white);
+  color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Animation classes */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
