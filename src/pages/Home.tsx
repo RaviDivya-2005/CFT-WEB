@@ -534,39 +534,24 @@ export default function Home() {
             <div className="h-1 w-[60px] bg-gradient-to-r from-amber-500 to-amber-600 rounded-full mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <motion.div
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-[var(--off-white)] rounded-2xl p-6 border-t-4 border-[var(--accent)] text-center"
+              className="font-sans text-base sm:text-lg text-slate-600 leading-relaxed"
             >
-              <RiAwardLine size={36} className="mx-auto text-[var(--accent)] mb-3" />
-              <h3 className="font-serif text-lg font-bold text-[var(--primary-dark)]">Our Mission</h3>
-              <p className="font-sans text-sm text-slate-500 mt-2">Safe, comfortable & reliable transportation for every journey.</p>
-            </motion.div>
-            <motion.div
+              Chethana Flybird Travels began with a simple promise — to provide safe, reliable, and affordable travel to every passenger. Over the years, we have completed <strong>10,000+ successful trips</strong> serving pilgrims, tourists, and corporate clients across Tirumala, Andhra Pradesh, and South India.
+            </motion.p>
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-[var(--off-white)] rounded-2xl p-6 border-t-4 border-[var(--primary-light)] text-center"
+              className="font-sans text-base sm:text-lg text-slate-600 leading-relaxed mt-4"
             >
-              <RiMapPin2Line size={36} className="mx-auto text-[var(--primary-light)] mb-3" />
-              <h3 className="font-serif text-lg font-bold text-[var(--primary-dark)]">Our Vision</h3>
-              <p className="font-sans text-sm text-slate-500 mt-2">To be the most trusted travel partner connecting people & places.</p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-              className="bg-[var(--off-white)] rounded-2xl p-6 border-t-4 border-emerald-500 text-center"
-            >
-              <RiHeartLine size={36} className="mx-auto text-emerald-500 mb-3" />
-              <h3 className="font-serif text-lg font-bold text-[var(--primary-dark)]">Our Values</h3>
-              <p className="font-sans text-sm text-slate-500 mt-2">Safety first. Customer satisfaction always.</p>
-            </motion.div>
+              Today, we specialize in everything from daily office commutes and airport transfers to outstation holidays and corporate travel — all with the same commitment to excellence.
+            </motion.p>
           </div>
 
           <div className="text-center">
