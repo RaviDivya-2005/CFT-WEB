@@ -140,7 +140,7 @@ ${personalForm.email ? `Email: ${personalForm.email}` : ''}`;
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="font-sans text-sm sm:text-base text-white/80 max-w-lg mx-auto"
+            className="font-sans text-sm sm:text-base text-[var(--accent-light)] max-w-lg mx-auto"
           >
             Quick booking in simple steps. We confirm within 10 minutes.
           </motion.p>
