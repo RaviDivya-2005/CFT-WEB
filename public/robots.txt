@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://chethanaflybirdtravels.com/sitemap.xml
+Sitemap: https://www.chethanaflybirdtravels.com/sitemap.xml
