@@ -1,9 +1,16 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin, AlarmClock } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Contact() {
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden bg-[var(--off-white)]">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Chethana Flybird Travels. Call +91 81214 81100 or WhatsApp us for instant cab bookings in Tirupati. Available 24/7."
+        keywords="contact Chethana Flybird Travels, Tirupati taxi phone number, cab booking contact"
+        canonicalUrl="https://www.chethanaflybirdtravels.com/contact"
+      />
       
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           SECTION 1: PAGE HERO BANNER

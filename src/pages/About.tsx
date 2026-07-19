@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
 import { 
   RiCompassLine,
   RiEyeLine,
@@ -37,6 +38,12 @@ export default function About() {
 
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden bg-[var(--off-white)]">
+      <SEO
+        title="About Us"
+        description="Learn about Chethana Flybird Travels — Tirupati's most trusted cab service with 10,000+ trips completed. Safe, reliable, and affordable travel solutions."
+        keywords="about Chethana Flybird Travels, Tirupati taxi service, trusted cab service Tirupati"
+        canonicalUrl="https://www.chethanaflybirdtravels.com/about"
+      />
       
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           SECTION 1: PAGE HERO BANNER

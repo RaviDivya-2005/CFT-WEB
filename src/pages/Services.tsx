@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
+import SEO from '../components/SEO';
 import { 
   RiWhatsappLine
 } from 'react-icons/ri';
@@ -28,6 +29,12 @@ export default function Services() {
 
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden bg-[var(--off-white)]">
+      <SEO
+        title="Our Services"
+        description="Explore Chethana Flybird Travels' premium services: local city rides, airport transfers, outstation trips, corporate travel, pilgrimage tours, and group bookings in Tirupati."
+        keywords="taxi services Tirupati, airport cab pickup, outstation trips Tirupati, corporate travel, pilgrimage packages"
+        canonicalUrl="https://www.chethanaflybirdtravels.com/services"
+      />
       
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           SECTION 1: PAGE HERO BANNER

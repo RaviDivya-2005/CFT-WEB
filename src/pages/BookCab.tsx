@@ -1,6 +1,7 @@
 import { useState, FormEvent } from 'react';
 import { motion } from 'motion/react';
 import { useSearchParams } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { 
   RiMapPinLine, 
   RiCarLine, 
@@ -112,6 +113,12 @@ ${personalForm.email ? `Email: ${personalForm.email}` : ''}`;
 
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden bg-[var(--off-white)]">
+      <SEO
+        title="Book a Cab"
+        description="Book a cab online with Chethana Flybird Travels. Quick booking in simple steps with WhatsApp confirmation. Available 24/7 in Tirupati."
+        keywords="book cab Tirupati, online taxi booking, cab reservation, hire taxi Tirupati"
+        canonicalUrl="https://www.chethanaflybirdtravels.com/book"
+      />
       
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           SECTION 1: PAGE HERO BANNER

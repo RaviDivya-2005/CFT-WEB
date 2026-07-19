@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
+import SEO from '../components/SEO';
 import { 
   RiGroupLine, 
   RiCheckLine, 
@@ -121,6 +122,12 @@ export default function Fleet() {
 
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden bg-[var(--off-white)]">
+      <SEO
+        title="Our Fleet"
+        description="Browse Chethana Flybird Travels' fleet of well-maintained vehicles — from sedans and SUVs to Tempo Travellers. Find the perfect ride for your journey in Tirupati."
+        keywords="fleet Tirupati, taxi fleet, sedan SUV tempo traveller, vehicle booking Tirupati"
+        canonicalUrl="https://www.chethanaflybirdtravels.com/fleet"
+      />
       
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           SECTION 1: PAGE HERO BANNER

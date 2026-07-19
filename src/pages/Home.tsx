@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import { motion, useInView } from 'motion/react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import { 
   RiCarLine, 
   RiPhoneLine, 
@@ -132,6 +133,12 @@ export default function Home() {
 
   return (
     <div className="flex flex-col min-h-screen relative overflow-x-hidden bg-[var(--off-white)]">
+      <SEO
+        title="Home"
+        description="Chethana Flybird Travels offers premium, reliable, and comfortable taxi services in Tirupati. Book local city rides, airport transfers, outstation trips, and corporate cabs 24/7."
+        keywords="taxi service Tirupati, cab booking Tirupati, airport transfer Tirupati, outstation cabs, Chethana Flybird Travels"
+        canonicalUrl="https://www.chethanaflybirdtravels.com/"
+      />
       
       {/* Custom Styles Injection for Floating Particles & Keyframes */}
       <style>{`
