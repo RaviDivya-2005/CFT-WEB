@@ -167,7 +167,7 @@ export default function Home() {
           SECTION 1: HERO SECTION
           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section 
-        className="relative min-h-[80vh] sm:min-h-[92vh] flex items-center justify-center pt-16 sm:pt-20 md:pt-24 lg:pt-28 pb-24 sm:pb-32 overflow-hidden bg-cover bg-center md:bg-fixed hero-bg"
+        className="relative min-h-[80vh] sm:min-h-[92vh] flex items-center justify-center pt-12 sm:pt-16 md:pt-18 pb-20 sm:pb-28 overflow-hidden bg-cover bg-center md:bg-fixed hero-bg"
       >
         {/* Deep, premium overlay gradient */}
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-[#0a193c]/75 via-[#0a193c]/55 to-[#0a193c]/85" />

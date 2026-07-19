@@ -48,11 +48,11 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
           
           {/* Logo element */}
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group -ml-1">
             <img
               src={logoImg}
               alt="Chethana Flybird Travels"
-              className="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+              className="h-[52px] w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03]"
             />
           </Link>
 
