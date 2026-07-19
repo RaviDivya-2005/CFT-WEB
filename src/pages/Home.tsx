@@ -520,6 +520,117 @@ export default function Home() {
 
 
       {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          SECTION 4: ABOUT US (COMPACT)
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <section className="py-16 bg-white" id="home-about-section">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
+            <span className="font-sans text-xs font-bold uppercase tracking-[3px] text-[var(--accent)] block">
+              ABOUT US
+            </span>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[var(--primary-dark)]">
+              Tirupati's Most Trusted Cab Service
+            </h2>
+            <div className="h-1 w-[60px] bg-gradient-to-r from-amber-500 to-amber-600 rounded-full mx-auto" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-[var(--off-white)] rounded-2xl p-6 border-t-4 border-[var(--accent)] text-center"
+            >
+              <RiAwardLine size={36} className="mx-auto text-[var(--accent)] mb-3" />
+              <h3 className="font-serif text-lg font-bold text-[var(--primary-dark)]">Our Mission</h3>
+              <p className="font-sans text-sm text-slate-500 mt-2">Safe, comfortable & reliable transportation for every journey.</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-[var(--off-white)] rounded-2xl p-6 border-t-4 border-[var(--primary-light)] text-center"
+            >
+              <RiMapPin2Line size={36} className="mx-auto text-[var(--primary-light)] mb-3" />
+              <h3 className="font-serif text-lg font-bold text-[var(--primary-dark)]">Our Vision</h3>
+              <p className="font-sans text-sm text-slate-500 mt-2">To be the most trusted travel partner connecting people & places.</p>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-[var(--off-white)] rounded-2xl p-6 border-t-4 border-emerald-500 text-center"
+            >
+              <RiHeartLine size={36} className="mx-auto text-emerald-500 mb-3" />
+              <h3 className="font-serif text-lg font-bold text-[var(--primary-dark)]">Our Values</h3>
+              <p className="font-sans text-sm text-slate-500 mt-2">Safety first. Customer satisfaction always.</p>
+            </motion.div>
+          </div>
+
+          <div className="text-center">
+            <Link to="/about" className="btn-primary inline-flex items-center gap-2 text-sm uppercase tracking-wider py-3 px-7">
+              <span>Know More About Us</span>
+              <RiArrowRightLine size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+          SECTION 5: OUR SERVICES (COMPACT)
+          ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+      <section className="py-16 bg-[var(--off-white)]" id="home-services-section">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
+            <span className="font-sans text-xs font-bold uppercase tracking-[3px] text-[var(--accent)] block">
+              OUR SERVICES
+            </span>
+            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[var(--primary-dark)]">
+              What We Offer
+            </h2>
+            <div className="h-1 w-[60px] bg-gradient-to-r from-amber-500 to-amber-600 rounded-full mx-auto" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { icon: <RiTaxiLine size={28} />, title: "Local City Rides", desc: "Quick & affordable rides within Tirupati city limits." },
+              { icon: <RiFlightTakeoffLine size={28} />, title: "Airport Transfers", desc: "On-time pickup & drop at Tirupati airport." },
+              { icon: <RiRoadMapLine size={28} />, title: "Outstation Trips", desc: "Comfortable long-distance travel to any city." },
+              { icon: <RiBriefcaseLine size={28} />, title: "Corporate Travel", desc: "Professional travel solutions for your business." },
+              { icon: <RiGroupLine size={28} />, title: "Group Bookings", desc: "Tempo travellers & SUVs for large groups." },
+              { icon: <RiMapPin2Line size={28} />, title: "Pilgrimage Tours", desc: "Tirumala, Kalahasti, Kanipakam & more." },
+            ].map((service, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05 }}
+                className="bg-white rounded-2xl p-6 border border-slate-100 hover:border-amber-500/30 hover:shadow-lg transition-all flex gap-4 items-start"
+              >
+                <span className="w-12 h-12 rounded-xl flex items-center justify-center bg-amber-50 text-[var(--accent)] shrink-0">
+                  {service.icon}
+                </span>
+                <div>
+                  <h3 className="font-serif text-base font-bold text-[var(--primary-dark)]">{service.title}</h3>
+                  <p className="font-sans text-sm text-slate-500 mt-1">{service.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-10">
+            <Link to="/services" className="btn-primary inline-flex items-center gap-2 text-sm uppercase tracking-wider py-3 px-7">
+              <span>View All Services</span>
+              <RiArrowRightLine size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           SECTION 6: CUSTOMER TESTIMONIALS
           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
       <section className="py-20 bg-white relative" id="testimonials-section">
