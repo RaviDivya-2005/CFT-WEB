@@ -210,13 +210,13 @@ export default function Services() {
                     </tr>
                     <tr className="hover:bg-amber-50/50 transition-colors">
                       <td className="py-4 px-6 font-medium">Tirupati Airport Pickup or Drop</td>
-                      <td className="py-4 px-6 font-bold text-center">₹600</td>
-                      <td className="py-4 px-6 font-bold text-center">₹1,000</td>
+                      <td className="py-4 px-6 font-bold text-center">₹800</td>
+                      <td className="py-4 px-6 font-bold text-center">₹1,500</td>
                     </tr>
                     <tr className="hover:bg-amber-50/50 transition-colors">
                       <td className="py-4 px-6 font-medium">Renigunta Station Pickup or Drop</td>
-                      <td className="py-4 px-6 font-bold text-center">₹300</td>
-                      <td className="py-4 px-6 font-bold text-center">₹400</td>
+                      <td className="py-4 px-6 font-bold text-center">₹600</td>
+                      <td className="py-4 px-6 font-bold text-center">₹1,000</td>
                     </tr>
                     <tr className="hover:bg-amber-50/50 transition-colors">
                       <td className="py-4 px-6 font-medium">Tirupati Station Pickup or Drop</td>
