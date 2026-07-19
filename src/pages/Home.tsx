@@ -541,7 +541,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="font-sans text-base sm:text-lg text-slate-600 leading-relaxed"
             >
-              Chethana Flybird Travels began with a simple promise — to provide safe, reliable, and affordable travel to every passenger. Over the years, we have completed <strong>10,000+ successful trips</strong> serving pilgrims, tourists, and corporate clients across Tirumala, Andhra Pradesh, and South India.
+              <strong>Chethana Flybird Travels</strong> began with a simple promise — to provide safe, reliable, and affordable travel to every passenger. Over the years, we have completed <strong>10,000+ successful trips</strong> serving pilgrims, tourists, and corporate clients across Tirumala, Andhra Pradesh, and South India.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -554,9 +554,13 @@ export default function Home() {
             </motion.p>
           </div>
 
-          <div className="text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/about" className="btn-primary inline-flex items-center gap-2 text-sm uppercase tracking-wider py-3 px-7">
               <span>Know More About Us</span>
+              <RiArrowRightLine size={16} />
+            </Link>
+            <Link to="/fleet" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider py-3 px-7 rounded-full border-2 border-[var(--primary-dark)] text-[var(--primary-dark)] hover:bg-[var(--primary-dark)] hover:text-white transition-all">
+              <span>Meet Our Fleet</span>
               <RiArrowRightLine size={16} />
             </Link>
           </div>
