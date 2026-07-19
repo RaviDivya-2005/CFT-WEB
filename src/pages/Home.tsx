@@ -233,11 +233,11 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-xl mx-auto w-full"
+            className="flex flex-row flex-wrap items-center justify-center gap-3 mx-auto w-full"
           >
             <Link 
               to="/book" 
-              className="btn-primary flex w-full sm:w-auto items-center justify-center gap-2 text-sm uppercase tracking-wider py-4 px-6 sm:px-8"
+              className="btn-primary flex items-center justify-center gap-2 text-xs sm:text-sm uppercase tracking-wider py-3 px-4 sm:px-6"
             >
               <RiCarLine size={18} />
               <span>Book a Cab Now</span>
@@ -245,7 +245,7 @@ export default function Home() {
 
             <a 
               href="tel:+918121481100" 
-              className="btn-secondary flex w-full sm:w-auto items-center justify-center gap-2 text-sm tracking-wide py-4 px-6 sm:px-8"
+              className="btn-secondary flex items-center justify-center gap-2 text-xs sm:text-sm tracking-wide py-3 px-4 sm:px-6"
             >
               <RiPhoneLine size={18} />
               <span>Call Now</span>
@@ -255,7 +255,7 @@ export default function Home() {
               href="https://wa.me/918121481100?text=Hi,%20I%20want%20to%20book%20a%20cab%20with%20Chethana%20Flybird%20Travels" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex w-full sm:w-auto items-center justify-center gap-2 text-sm font-bold bg-[#25D366] hover:bg-[#20ba56] text-white border-none py-4 px-6 sm:px-8 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] transition-transform hover:scale-105"
+              className="flex items-center justify-center gap-2 text-xs sm:text-sm font-bold bg-[#25D366] hover:bg-[#20ba56] text-white border-none py-3 px-4 sm:px-6 rounded-full shadow-[0_4px_15px_rgba(37,211,102,0.4)] transition-transform hover:scale-105"
             >
               <RiWhatsappLine size={20} />
               <span>WhatsApp Us</span>
